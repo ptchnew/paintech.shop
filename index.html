@@ -33,13 +33,13 @@
         header img {
             max-width: 100%;
             height: auto;
-            display:inline-block;
+            display: inline-block;
         }
-
 
         main {
             padding: 20px;
         }
+
         section {
             background: white;
             padding: 20px;
@@ -111,6 +111,20 @@
             border-color: #4CAF50;
         }
 
+.terms {
+            width: 85%;
+            padding: 10px;
+            margin: 10px auto;
+            border-collapse: collapse;
+            margin-top: 1px;
+            max-width : 800px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
         footer {
             background-color: #0E4646;
             color: white;
@@ -120,6 +134,7 @@
 
         footer .social-icons {
             margin: 10px 0;
+            text-align: center;
         }
 
         footer .social-icons a {
@@ -128,11 +143,39 @@
             margin: 0 10px;
         }
 
+        footer .social-icons img {
+            max-height: 30px;
+            margin: 0 10px;
+        }
+
         footer p {
             margin: 15px 0 0;
             padding: 10px;
+            text-align: center;
         }
 
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50px;
+            padding: 10px 20px;
+            text-align: center;
+            text-align-last: left;
+            font-size: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .floating-whatsapp img {
+            max-height: 30px;
+            margin-right: 10px;
+        }
         /* Responsif untuk perangkat kecil */
         @media (max-width: 600px) {
             .price-tables {
@@ -156,6 +199,7 @@
     <main>
         <section>
             <h2>Pricing Table</h2>
+             <p style="text-align:left; margin-top:20px;">Dapatkan layanan VPN Tunneling Premium dari Paintech sekarang juga! Ssh X-ray Noobzvpn </p>
             <div class="price-tables">
                 <table class="price-table">
                     <caption>Server Singapore</caption>
@@ -216,15 +260,24 @@
             </div>
         </section>
     </main>
-
+        <div class="terms">
+        <p><strong>TOS :</strong></p>
+        <p>NO DDOS, NO TORRENT, NO HACKING, atau Multi Login akun</p>
+    </div>
     <footer>
-      <p>PAINTECH</p>
+        <p>PAINTECH VPN TUNNELING</p>
+        <h6><p><a  href="status.isppaintechidn.cloud">Uptime Server</a></p></h6>
+        <h6><p><a  href="t.me/channelpaintech">Channel Telegram</a></p></h6>
         <div class="social-icons">
-            <a href="https://facebook.com" target="_blank">FB</a>
-            <a href="https://wa.me" target="_blank">WA</a>
-            <a href="https://telegram.org" target="_blank">Telegram</a>
+            <a href="https://facebook.com" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+            <a href="https://wa.me" target="_blank"><img src="whatsapp.png" alt="WhatsApp"></a>
+            <a href="https://telegram.org" target="_blank"><img src="telegram.png" alt="Telegram"></a>
         </div>
         <p>&copy; 2024 Paintech VPN Tunneling. All rights reserved.</p>
     </footer>
+        <div class="floating-whatsapp" onclick="window.location.href='https://wa.me/6281249063560';">
+        <img src="icons8-whatsapp-48.png" alt="WhatsApp">
+        <span> <b>Hubungi kami</b></span>
+    </div>
 </body>
 </html>
